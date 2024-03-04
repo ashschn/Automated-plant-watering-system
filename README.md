@@ -1,7 +1,9 @@
 # Automated Plant Watering System
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This project works to automate the plant watering process for indoor house plants. It includes various sensors and actuators that monitor the moisture in the soil and waters the plant when the soil becomes dry enough. It also monitors the temperature and humidity in the plant's environment and the water levels of source water and displays the information on the LCD so the user can easily monitor the system. 
+
+The heart of the system is the Arduino AtMega2560 where all sensors are controlled from. Notably, no external libraries were used aside from <avr/io.h> (to get appropriate IO definitions for the Arduino) and <util/delay.h> (for delays when initalizing). Otherwise, all device drivers for peripheral devices were created from scratch. 
 
 ## Badges
 On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
@@ -18,9 +20,6 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 ## Support
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
 ## Contributing
 State if you are open to contributions and what your requirements are for accepting them.
 
@@ -35,4 +34,4 @@ Show your appreciation to those who have contributed to the project.
 For open source projects, say how it is licensed.
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+The project status stands as stated in the Project Description section. For future work, a schematic needs to be added to the documentation that shows connections between devices. Another feature to be added is to allow the user to input a type of plant, which will modify the level of dryness the soil must meet before it is watered. For example, drought tolerante plants like cactuses need to be drier than most other plants before it needs to be watered.
